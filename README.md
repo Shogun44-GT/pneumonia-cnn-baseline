@@ -1,11 +1,13 @@
-# 🫁 Détection de Pneumonie — CNN Baseline
+# Détection de Pneumonie — CNN Baseline
+
+> A reproducible PyTorch baseline for pneumonia classification, focused on evaluation quality and clinically important errors.
 
 > Classification binaire de radiographies thoraciques (Normal vs Pneumonie)  
 > Projet Deep Learning — B3 IA & Big Data — ECE Paris — Avril 2026
 
 ---
 
-## 📋 Description
+## Description
 
 Ce projet implémente un pipeline complet de Deep Learning pour la détection automatique de pneumonie sur des radiographies thoraciques, à partir du dataset public **Chest X-Ray Images (Pneumonia)** disponible sur Kaggle.
 
@@ -13,7 +15,7 @@ L'objectif n'est pas de remplacer le médecin, mais de proposer un **outil d'aid
 
 ---
 
-## 🏆 Résultats
+## Résultats
 
 | Métrique | Valeur |
 |----------|--------|
@@ -27,7 +29,7 @@ L'objectif n'est pas de remplacer le médecin, mais de proposer un **outil d'aid
 
 ---
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 medical-cnn-pneumonia/
@@ -56,7 +58,7 @@ medical-cnn-pneumonia/
 
 ---
 
-## 🧠 Architecture CNN
+## Architecture CNN
 
 ```
 Image 224×224
@@ -88,7 +90,7 @@ Paramètres totaux : 12 938 561
 
 ---
 
-## 📦 Installation
+## Installation
 
 **Prérequis : Python 3.11**
 
@@ -104,7 +106,7 @@ pip install numpy pandas matplotlib scikit-learn streamlit Pillow jupyter
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 Télécharger le dataset depuis Kaggle :  
 🔗 [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
@@ -128,7 +130,7 @@ Mettre à jour le chemin `DATA_DIR` dans `src/dataset.py`.
 
 ---
 
-## 🚀 Utilisation
+## Utilisation
 
 ### Entraînement
 ```bash
@@ -153,7 +155,7 @@ Ouvrir dans PyCharm ou Jupyter et exécuter les cellules dans l'ordre :
 
 ---
 
-## 🖥️ Interface Streamlit
+## Interface Streamlit
 
 L'interface permet de charger n'importe quelle radiographie thoracique et d'obtenir instantanément :
 - La classe prédite (NORMAL / PNEUMONIE)
@@ -166,7 +168,7 @@ streamlit run app.py
 
 ---
 
-## 📊 Figures générées
+## Figures générées
 
 | Figure | Description |
 |--------|-------------|
@@ -179,13 +181,13 @@ streamlit run app.py
 
 ---
 
-## ⚠️ Avertissement médical
+## Avertissement médical
 
 Ce modèle est un **outil de recherche académique**. Il ne remplace pas l'avis d'un professionnel de santé. Tout diagnostic doit être confirmé par un médecin.
 
 ---
 
-## 🔧 Extensions possibles
+## Extensions possibles
 
 - [ ] Transfert d'apprentissage (ResNet18, DenseNet121, EfficientNet)
 - [ ] Optimisation du seuil de décision via la courbe ROC
@@ -194,7 +196,7 @@ Ce modèle est un **outil de recherche académique**. Il ne remplace pas l'avis 
 
 ---
 
-## 📚 Références
+## Références
 
 - Kaggle — [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
 - LeCun, Bengio, Hinton — *Deep Learning*, Nature, 2015
@@ -202,7 +204,7 @@ Ce modèle est un **outil de recherche académique**. Il ne remplace pas l'avis 
 
 ---
 
-## 👤 Auteur
+## Auteur
 
 **Joan Andy Mballa Nsengue**  
 B3 IA & Big Data — ECE Paris  
